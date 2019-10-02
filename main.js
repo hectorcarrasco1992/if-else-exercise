@@ -11,9 +11,18 @@ function isItLong(str) {
 
 }
   
-function isItMedium() {
+function isItMedium(str) {
+  let response = " "
 
-}
+  if(str.length >=10 && str.length <= 20){
+    response = "That's a regular sized string!"
+
+  }else if(str.length <10 || str.length >20){
+    response=undefined
+  }
+  return response;
+  }
+
 
 function isItShort() {
 
