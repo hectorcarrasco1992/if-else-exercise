@@ -24,12 +24,27 @@ function isItMedium(str) {
   }
 
 
-function isItShort() {
+function isItShort(str) {
+  let response = " "
 
+  if(str.length <10){
+    response = "That's a small string!"
+  }else if(str.length >10){
+    response=undefined
+  }
+
+
+  return response
 }
 
-function howLongIsMyString() {
+function howLongIsMyString(str) {
+  let response = isItLong(str) || isItMedium(str) || isItShort(str)
 
+  
+
+
+
+  return response
 }
 
 function instructorHeight() {
