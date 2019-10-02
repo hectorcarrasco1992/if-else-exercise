@@ -1,7 +1,16 @@
-function isItLong() {
+function isItLong(str) {
+  let response = " "
+
+  if(str.length>20){
+    response="That's a long string!"
+  }else if(str.length<20 ||str.length === 20){
+    response = undefined
+  }
+  return response
+
 
 }
-
+  
 function isItMedium() {
 
 }
